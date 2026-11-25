@@ -1,0 +1,246 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] lab-7-microservice                                                 [pom]
+[INFO] common                                                             [jar]
+[INFO] payment-service                                                    [jar]
+[INFO] settlement-service                                                 [jar]
+[INFO] 
+[INFO] -------------------< com.payment:lab-7-microservice >-------------------
+[INFO] Building lab-7-microservice 1.0.0                                  [1/4]
+[INFO]   from pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] -------------------------< com.payment:common >-------------------------
+[INFO] Building common 1.0.0                                              [2/4]
+[INFO]   from common/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ common ---
+[INFO] skip non existing resourceDirectory /home/metall_head/IdeaProjects/java_lab8/lab-8-message-brokers/common/src/main/resources
+[INFO] skip non existing resourceDirectory /home/metall_head/IdeaProjects/java_lab8/lab-8-message-brokers/common/src/main/resources
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (default-compile) @ common ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ common ---
+[INFO] skip non existing resourceDirectory /home/metall_head/IdeaProjects/java_lab8/lab-8-message-brokers/common/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.13.0:testCompile (default-testCompile) @ common ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- surefire:3.5.2:test (default-test) @ common ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.payment.common.CommonDtoTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.053 s -- in com.payment.common.CommonDtoTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] 
+[INFO] --------------------< com.payment:payment-service >---------------------
+[INFO] Building payment-service 1.0.0                                     [3/4]
+[INFO]   from payment-service/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ payment-service ---
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] Copying 0 resource from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (default-compile) @ payment-service ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ payment-service ---
+[INFO] skip non existing resourceDirectory /home/metall_head/IdeaProjects/java_lab8/lab-8-message-brokers/payment-service/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.13.0:testCompile (default-testCompile) @ payment-service ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- surefire:3.5.2:test (default-test) @ payment-service ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.payment.paymentservice.PaymentServiceApplicationTests
+15:25:20.266 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.payment.paymentservice.PaymentServiceApplicationTests]: PaymentServiceApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+15:25:20.329 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.payment.paymentservice.PaymentServiceApplication for test class com.payment.paymentservice.PaymentServiceApplicationTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.4.1)
+
+2026-11-25T15:25:20.579+02:00  INFO 23351 --- [payment-service] [           main] c.p.p.PaymentServiceApplicationTests     : Starting PaymentServiceApplicationTests using Java 21.0.11 with PID 23351 (started by metall_head in /home/metall_head/IdeaProjects/java_lab8/lab-8-message-brokers/payment-service)
+2026-11-25T15:25:20.580+02:00  INFO 23351 --- [payment-service] [           main] c.p.p.PaymentServiceApplicationTests     : No active profile set, falling back to 1 default profile: "default"
+2026-11-25T15:25:20.947+02:00  INFO 23351 --- [payment-service] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-11-25T15:25:20.977+02:00  INFO 23351 --- [payment-service] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 24 ms. Found 1 JPA repository interface.
+2026-11-25T15:25:21.232+02:00  INFO 23351 --- [payment-service] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-11-25T15:25:21.259+02:00  INFO 23351 --- [payment-service] [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.4.Final
+2026-11-25T15:25:21.277+02:00  INFO 23351 --- [payment-service] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-11-25T15:25:21.412+02:00  INFO 23351 --- [payment-service] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-11-25T15:25:21.427+02:00  INFO 23351 --- [payment-service] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-11-25T15:25:21.521+02:00  INFO 23351 --- [payment-service] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:paymentdb user=SA
+2026-11-25T15:25:21.522+02:00  INFO 23351 --- [payment-service] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-11-25T15:25:21.552+02:00  INFO 23351 --- [payment-service] [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-11-25T15:25:21.896+02:00  INFO 23351 --- [payment-service] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-11-25T15:25:21.924+02:00  INFO 23351 --- [payment-service] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-11-25T15:25:22.284+02:00  WARN 23351 --- [payment-service] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-11-25T15:25:22.499+02:00  INFO 23351 --- [payment-service] [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-11-25T15:25:22.500+02:00  INFO 23351 --- [payment-service] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-11-25T15:25:22.501+02:00  INFO 23351 --- [payment-service] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2026-11-25T15:25:22.519+02:00  INFO 23351 --- [payment-service] [           main] c.p.p.PaymentServiceApplicationTests     : Started PaymentServiceApplicationTests in 2.122 seconds (process running for 2.594)
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.727 s -- in com.payment.paymentservice.PaymentServiceApplicationTests
+[INFO] Running com.payment.paymentservice.PaymentTransactionalPublishingTest
+2026-11-25T15:25:22.916+02:00  INFO 23351 --- [payment-service] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.payment.paymentservice.PaymentTransactionalPublishingTest]: PaymentTransactionalPublishingTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-11-25T15:25:22.921+02:00  INFO 23351 --- [payment-service] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.payment.paymentservice.PaymentServiceApplication for test class com.payment.paymentservice.PaymentTransactionalPublishingTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.4.1)
+
+2026-11-25T15:25:22.945+02:00  INFO 23351 --- [payment-service] [           main] c.p.p.PaymentTransactionalPublishingTest : Starting PaymentTransactionalPublishingTest using Java 21.0.11 with PID 23351 (started by metall_head in /home/metall_head/IdeaProjects/java_lab8/lab-8-message-brokers/payment-service)
+2026-11-25T15:25:22.945+02:00  INFO 23351 --- [payment-service] [           main] c.p.p.PaymentTransactionalPublishingTest : No active profile set, falling back to 1 default profile: "default"
+2026-11-25T15:25:23.021+02:00  INFO 23351 --- [payment-service] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-11-25T15:25:23.025+02:00  INFO 23351 --- [payment-service] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 1 JPA repository interface.
+2026-11-25T15:25:23.339+02:00  INFO 23351 --- [payment-service] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-11-25T15:25:23.350+02:00  INFO 23351 --- [payment-service] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-11-25T15:25:23.370+02:00  INFO 23351 --- [payment-service] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-11-25T15:25:23.372+02:00  INFO 23351 --- [payment-service] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2026-11-25T15:25:23.374+02:00  INFO 23351 --- [payment-service] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection conn10: url=jdbc:h2:mem:paymentdb user=SA
+2026-11-25T15:25:23.374+02:00  INFO 23351 --- [payment-service] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2026-11-25T15:25:23.375+02:00  INFO 23351 --- [payment-service] [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-11-25T15:25:23.429+02:00  INFO 23351 --- [payment-service] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-11-25T15:25:23.433+02:00  INFO 23351 --- [payment-service] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-11-25T15:25:23.533+02:00  WARN 23351 --- [payment-service] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-11-25T15:25:23.650+02:00  INFO 23351 --- [payment-service] [           main] c.p.p.PaymentTransactionalPublishingTest : Started PaymentTransactionalPublishingTest in 0.726 seconds (process running for 3.725)
+2026-11-25T15:25:23.973+02:00  INFO 23351 --- [payment-service] [           main] c.p.p.messaging.PaymentEventPublisher    : Publishing PaymentCompletedEvent b07bee87-d514-49a4-b64d-fb2b067c2aa2 for payment pay-ok-1
+2026-11-25T15:25:24.002+02:00  INFO 23351 --- [payment-service] [           main] c.p.p.messaging.PaymentEventPublisher    : Publishing SettlementRequestedEvent 9e7649b3-b6a6-4798-9b73-473aeffd39f3 for date 2026-11-25
+2026-11-25T15:25:24.011+02:00  INFO 23351 --- [payment-service] [           main] c.p.p.messaging.PaymentEventPublisher    : Publishing PaymentCompletedEvent 2682413d-b282-4a7c-bc14-c1039f795454 for payment pay-ref-1
+2026-11-25T15:25:24.018+02:00  INFO 23351 --- [payment-service] [           main] c.p.p.messaging.PaymentEventPublisher    : Publishing PaymentRefundedEvent faeba999-6a2c-43c0-8a84-288d1eacb95a for payment pay-ref-1
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.108 s -- in com.payment.paymentservice.PaymentTransactionalPublishingTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] 
+[INFO] -------------------< com.payment:settlement-service >-------------------
+[INFO] Building settlement-service 1.0.0                                  [4/4]
+[INFO]   from settlement-service/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ settlement-service ---
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] Copying 0 resource from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (default-compile) @ settlement-service ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ settlement-service ---
+[INFO] Copying 1 resource from src/test/resources to target/test-classes
+[INFO] 
+[INFO] --- compiler:3.13.0:testCompile (default-testCompile) @ settlement-service ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- surefire:3.5.2:test (default-test) @ settlement-service ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.payment.settlementservice.SettlementEventHandlerIdempotencyTest
+15:25:25.125 [main] INFO com.payment.settlementservice.messaging.SettlementEventHandler -- Recorded refunded payment pay-2 (event 56ca251b-1c28-495c-a582-40362dc1a6be)
+15:25:25.126 [main] INFO com.payment.settlementservice.messaging.SettlementEventHandler -- Skipping duplicate PaymentRefundedEvent with eventId 56ca251b-1c28-495c-a582-40362dc1a6be
+15:25:25.167 [main] INFO com.payment.settlementservice.messaging.SettlementEventHandler -- Generated settlement report for 2026-11-25 (event ee1afb30-b87a-4a8f-856c-90a136e513da): 1 payments, total 75.00
+15:25:25.167 [main] INFO com.payment.settlementservice.messaging.SettlementEventHandler -- Skipping duplicate SettlementRequestedEvent with eventId ee1afb30-b87a-4a8f-856c-90a136e513da
+15:25:25.172 [main] INFO com.payment.settlementservice.messaging.SettlementEventHandler -- Recorded completed payment pay-1 (event 9774cb36-55ad-4892-bb09-da9cc47359af)
+15:25:25.172 [main] INFO com.payment.settlementservice.messaging.SettlementEventHandler -- Skipping duplicate PaymentCompletedEvent with eventId 9774cb36-55ad-4892-bb09-da9cc47359af
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.798 s -- in com.payment.settlementservice.SettlementEventHandlerIdempotencyTest
+[INFO] Running com.payment.settlementservice.SettlementServiceApplicationTests
+15:25:25.228 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.payment.settlementservice.SettlementServiceApplicationTests]: SettlementServiceApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+15:25:25.298 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.payment.settlementservice.SettlementServiceApplication for test class com.payment.settlementservice.SettlementServiceApplicationTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.4.1)
+
+2026-11-25T15:25:25.522+02:00  INFO 23429 --- [           main] c.p.s.SettlementServiceApplicationTests  : Starting SettlementServiceApplicationTests using Java 21.0.11 with PID 23429 (started by metall_head in /home/metall_head/IdeaProjects/java_lab8/lab-8-message-brokers/settlement-service)
+2026-11-25T15:25:25.522+02:00  INFO 23429 --- [           main] c.p.s.SettlementServiceApplicationTests  : No active profile set, falling back to 1 default profile: "default"
+2026-11-25T15:25:25.878+02:00  INFO 23429 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-11-25T15:25:25.910+02:00  INFO 23429 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 26 ms. Found 3 JPA repository interfaces.
+2026-11-25T15:25:26.145+02:00  INFO 23429 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-11-25T15:25:26.244+02:00  INFO 23429 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:f4280400-541b-4732-9ac7-eec1de0de71a user=SA
+2026-11-25T15:25:26.246+02:00  INFO 23429 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-11-25T15:25:26.281+02:00  INFO 23429 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-11-25T15:25:26.310+02:00  INFO 23429 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.4.Final
+2026-11-25T15:25:26.327+02:00  INFO 23429 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-11-25T15:25:26.385+02:00  INFO 23429 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-11-25T15:25:26.435+02:00  INFO 23429 --- [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-11-25T15:25:26.774+02:00  INFO 23429 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-11-25T15:25:26.794+02:00  INFO 23429 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-11-25T15:25:27.102+02:00  WARN 23429 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-11-25T15:25:27.509+02:00  INFO 23429 --- [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-11-25T15:25:27.510+02:00  INFO 23429 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-11-25T15:25:27.512+02:00  INFO 23429 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2026-11-25T15:25:27.544+02:00  INFO 23429 --- [           main] c.p.s.SettlementServiceApplicationTests  : Started SettlementServiceApplicationTests in 2.18 seconds (process running for 3.419)
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.463 s -- in com.payment.settlementservice.SettlementServiceApplicationTests
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for lab-7-microservice 1.0.0:
+[INFO] 
+[INFO] lab-7-microservice ................................. SUCCESS [  0.001 s]
+[INFO] common ............................................. SUCCESS [  0.723 s]
+[INFO] payment-service .................................... SUCCESS [  4.306 s]
+[INFO] settlement-service ................................. SUCCESS [  3.617 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  8.821 s
+[INFO] Finished at: 2026-11-25T15:25:27+02:00
+[INFO] ------------------------------------------------------------------------
