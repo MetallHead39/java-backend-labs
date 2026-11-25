@@ -1,0 +1,4 @@
+grpc:
+  server:
+    enabled: false
+    port: 0

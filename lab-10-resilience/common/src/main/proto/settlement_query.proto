@@ -1,0 +1,40 @@
+syntax = "proto3";
+
+package com.payment.grpc;
+
+option java_multiple_files = true;
+option java_package = "com.payment.grpc";
+option java_outer_classname = "SettlementQueryProto";
+
+service SettlementQueryService {
+  rpc GetSettlementDay (SettlementDayRequest) returns (SettlementDayResponse);
+  rpc GetMerchantFee (MerchantFeeRequest) returns (MerchantFeeResponse);
+  rpc GetDailyLimit (DailyLimitRequest) returns (DailyLimitResponse);
+}
+
+message SettlementDayRequest {
+  string date = 1;
+}
+
+message SettlementDayResponse {
+  string date = 1;
+  string status = 2;
+}
+
+message MerchantFeeRequest {
+  string merchantId = 1;
+}
+
+message MerchantFeeResponse {
+  string merchantId = 1;
+  double feePercent = 2;
+}
+
+message DailyLimitRequest {
+  string merchantId = 1;
+}
+
+message DailyLimitResponse {
+  string merchantId = 1;
+  double remainingLimit = 2;
+}
