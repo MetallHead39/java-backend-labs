@@ -1,0 +1,18 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: payment-service
+
+integration:
+  settlement:
+    transport: ${SETTLEMENT_TRANSPORT:http}
+    http:
+      base-url: ${SETTLEMENT_REST_URL:http://localhost:8082}
+      connect-timeout-ms: ${SETTLEMENT_HTTP_CONNECT_TIMEOUT_MS:2000}
+      read-timeout-ms: ${SETTLEMENT_HTTP_READ_TIMEOUT_MS:3000}
+    grpc:
+      host: ${SETTLEMENT_GRPC_HOST:localhost}
+      port: ${SETTLEMENT_GRPC_PORT:9090}
+      deadline-ms: ${SETTLEMENT_GRPC_DEADLINE_MS:2000}

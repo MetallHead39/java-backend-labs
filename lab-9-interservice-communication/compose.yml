@@ -1,0 +1,25 @@
+services:
+  settlement-service:
+    build:
+      context: ./settlement-service
+      dockerfile: Dockerfile
+    ports:
+      - "8082:8082"
+      - "9090:9090"
+    environment:
+      GRPC_SERVER_ENABLED: "true"
+      GRPC_SERVER_PORT: "9090"
+
+  payment-service:
+    build:
+      context: ./payment-service
+      dockerfile: Dockerfile
+    ports:
+      - "8081:8081"
+    environment:
+      SETTLEMENT_TRANSPORT: ${SETTLEMENT_TRANSPORT:-grpc}
+      SETTLEMENT_REST_URL: http://settlement-service:8082
+      SETTLEMENT_GRPC_HOST: settlement-service
+      SETTLEMENT_GRPC_PORT: "9090"
+    depends_on:
+      - settlement-service
